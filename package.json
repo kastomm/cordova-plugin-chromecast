@@ -1,15 +1,28 @@
 {
-  "name": "cordova-plugin-chromecast",
-  "version": "1.0.0",
-  "scripts": {
-    "host-chrome-tests": "node tests/www/chrome/host-tests.js",
-    "style-fix-js": "node node_modules/eslint/bin/eslint --fix src && node node_modules/eslint/bin/eslint --fix www && node node_modules/eslint/bin/eslint --ignore-pattern tests/www/lib --fix tests/www",
-    "test": "node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint --ignore-pattern tests/www/lib tests/www && node ./node_modules/java-checkstyle/bin/index.js ./src/android/ -c ./check_style.xml",
-    "style": "npm run style-fix-js && npm run test"
+  "_from": "git+https://github.com/kastomm/cordova-plugin-chromecast.git",
+  "_id": "cordova-plugin-chromecast@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-chromecast",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/kastomm/cordova-plugin-chromecast.git",
+    "rawSpec": "https://github.com/kastomm/cordova-plugin-chromecast.git",
+    "saveSpec": "git+https://github.com/kastomm/cordova-plugin-chromecast.git",
+    "fetchSpec": "https://github.com/kastomm/cordova-plugin-chromecast.git",
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/kastomm/cordova-plugin-chromecast.git#98edc9e50f4f2be8f470f8a92003bd33171f0233",
+  "_spec": "https://github.com/kastomm/cordova-plugin-chromecast.git",
+  "_where": "C:\\Users\\averm\\source\\Ionic5\\OnePlay",
   "author": "",
-  "license": "dual GPLv3/MPLv2",
-  "readme": "README.md",
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "README.md",
   "devDependencies": {
     "eslint": "~3.19.0",
@@ -22,5 +35,21 @@
     "express": "^4.17.1",
     "java-checkstyle": "0.0.1",
     "path": "^0.12.7"
-  }
+  },
+  "license": "dual GPLv3/MPLv2",
+  "name": "cordova-plugin-chromecast",
+  "scripts": {
+    "host-chrome-tests": "node tests/www/chrome/host-tests.js",
+    "style": "npm run style-fix-js && npm run test",
+    "style-fix-js": "node node_modules/eslint/bin/eslint --fix src && node node_modules/eslint/bin/eslint --fix www && node node_modules/eslint/bin/eslint --ignore-pattern tests/www/lib --fix tests/www",
+    "test": "node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint --ignore-pattern tests/www/lib tests/www && node ./node_modules/java-checkstyle/bin/index.js ./src/android/ -c ./check_style.xml"
+  },
+  "cordova": {
+      "id": "cordova-plugin-chromecast",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+	},
+  "version": "1.0.0"
 }
